@@ -16,18 +16,18 @@ def main():
 
   outfilename = conf.output_book_name
 
-  if crawler.hasNext():
+  while crawler.hasNext():
     content = crawler.getNextPage()
 
-  # Append to file
-  with open(outfilename, 'a+') as outfile:
-    outfile.write(content)
+    # Append to file
+    with open(outfilename, 'a+') as outfile:
+      outfile.write(content)
 
-  # Console information
-  print 'Page ' + str(crawler.getCurrentPage()) + ' finished!'
+    # Console information
+    print 'Page ' + str(crawler.getCurrentPage()) + ' finished!'
 
-  # Sleep to prevent the server from blacklisting my IP
-  time.sleep(1)
+    # Sleep to prevent the server from blacklisting my IP
+    time.sleep(1)
 
 if __name__ == "__main__":
   main()
