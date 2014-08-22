@@ -1,0 +1,37 @@
+{ 
+  "url_conf": {
+    "base_url_prefix": "http://www.putixin.com/continue/xuyunz050528/xyz-",
+    "base_url_suffix": ".htm"
+  },
+  
+  "page_conf": {
+    "first_page": 1,
+    "last_page": 2,
+    "all_two_digit_number": true
+  },
+  
+  "encoding_conf": {
+    "source_encoding": "gbk",
+    "target_encoding": "utf-8"
+  },
+
+  "content_conf": {
+    "content_body_tag": "table",
+    "content_body_tag_attrs": {
+      "width":"95%",
+      "cellpadding": "5", 
+      "cellspacing":"0"
+    },
+    "content_contain_p_tags": true
+  },
+
+  "file_conf": {
+    "output_book_name": "book.txt"
+  },
+  
+  "escape_conf": {
+    "escape_tags" : [
+      "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=gb2312\">"
+    ]
+  }
+}
